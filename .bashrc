@@ -1,5 +1,7 @@
-# Custom functions
+# Custom functions, and modified Unix commands
 cl(){ cd "$1" && ls; }
+alias pd='pushd .'
+alias dirs='dirs -v -p'
 
 # Run Command Files
 alias aledit='vim ~/.bashrc'
@@ -8,15 +10,15 @@ alias profile='nano ~/.bash_profile'
 alias vimedit='vim ~/.vimrc'
 
 # Bookmarks
-alias pd='pushd .'
-alias dirs='dirs -v -p'
 alias folders='cl c:/my_folders'
 alias coding='cl c:/my_folders/coding'
 alias notes='cl c:/my_folders/coding/notes/obsidian_notes'
+alias tavern='cl c:my_folders/coding/Godot/tavern_proj_2'
+alias vimrt='cl /usr/share/vim/vim91'
+
+# Quick edit
 alias ideas='vim c:/my_folders/coding/notes/obsidian_notes/ideas.md'
 alias misc='vim c:/my_folders/coding/notes/obsidian_notes/misc.md'
-
-alias vimrt='cl /usr/share/vim/vim91'
 
 # Git
 alias gcm="git commit -m"
